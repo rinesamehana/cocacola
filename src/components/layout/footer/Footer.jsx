@@ -1,18 +1,15 @@
 import React from 'react';
-import './footer.css';
 
-
-function Footer() {
+const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <p>&copy; 2023 Your Website</p>
-          <p>All rights reserved.</p>
-        </div>
+    <footer className="bg-red-700 text-white py-4">
+      <div className="container mx-auto text-center">
+        <p className="text-sm">
+          &copy; {new Date().getFullYear()} Coca-Cola. All rights reserved.
+        </p>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
