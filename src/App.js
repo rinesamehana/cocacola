@@ -3,9 +3,12 @@ import { Route, Routes } from "react-router-dom";
 
 import LoadingSpinner from "./components/UI/LoadingSpinner.jsx";
 import Layout from "./components/layout/Layout";
-import BrandsPage from "./pages/brands/BrandsPage.jsx";
+
+
 
 const HomePage = React.lazy(() => import("./pages/home/HomePage"));
+const BrandsPage = React.lazy(() => import("./pages/brands/BrandsPage"));
+const AboutPage =  React.lazy(() => import("./pages/about/AboutPage"));
 
 function App() {
   return (
@@ -14,7 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/brandspage" element={<BrandsPage />} />
-         
+          <Route exact path="/aboutpage" element={<AboutPage />} />
         </Routes>
       </Suspense>
       </Layout>
