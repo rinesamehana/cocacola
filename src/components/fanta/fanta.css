@@ -6,12 +6,11 @@
 
 .background {
     position: relative;
-    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     background: #ff9500;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .background span {
@@ -90,4 +89,28 @@
     transform-origin: 17vw 3vh;
     box-shadow: 68vmin 0 9.053805210173579vmin currentColor;
 }
+.fanta-section {
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+    left: 10%;
+    padding: 30px;
+    display:flex;
+    align-items: center;
+}
 
+.fantaImage{
+    background-image: url(../../../public/images/fanta.png);
+    height: 600px;
+    width: 500px;
+}
+.fantaText{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    height:250px;
+    width: 300px;
+}
+.h1.fantaText{
+    padding: 10%;
+}
