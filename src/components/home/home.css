@@ -75,8 +75,7 @@
   border: 5px solid #521313;
   transition: background-color 0.3s, transform 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  animation: roll-in-text 2s forwards; /* Add the roll-in animation to the card text */
-  animation: border-animation 2s infinite;
+  animation: roll-in-text 2s forwards, border-animation 2s infinite; /* Add the roll-in animation to the card text */
 }
 
 @keyframes roll-in-text {
