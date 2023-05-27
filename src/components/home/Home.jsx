@@ -28,8 +28,11 @@ const Home = () => {
       </div>
 
     </div>
-
-    
+    <div className="picture-frame">
+      <div className="image-container">
+        <h2 className="title">Everywhere</h2>
+      </div>
+    </div>
     </Controller>
 
   </>
