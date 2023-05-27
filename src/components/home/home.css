@@ -26,7 +26,92 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 40px;
 }
 
 
+/* Section2 starts */
 
+.section {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  margin-bottom: 20px;
+}
+
+.image-container {
+  flex: 0 0 100%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  padding: 15px; /* Adjust the spacing between the image and text */
+  animation: roll-in-image 2s forwards;
+}
+
+@keyframes roll-in-image {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+ 
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  animation: roll-in-image 2s forwards; /* Add the roll-in animation to the image */
+}
+
+.card-text {
+  flex: 0 0 100%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  padding: 40px; /* Adjust the spacing between the image and text */
+  border-radius: 8px;
+  border: 5px solid #521313;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: roll-in-text 2s forwards; /* Add the roll-in animation to the card text */
+  animation: border-animation 2s infinite;
+}
+
+@keyframes roll-in-text {
+  0% {
+    transform: translateX(100%); /* Start offscreen from the right */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Move to the original position */
+    opacity: 1;
+  }
+}
+@keyframes border-animation {
+  0% {
+    border-color: #521313;
+  }
+  50% {
+    border-color: #0f0909;
+  }
+  100% {
+    border-color: #926363;
+  }
+}
+
+.card-text:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.02);
+}
+
+.card-text h2 {
+  font-size: 20px; /* Decrease the font size for the title */
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: 16px;
+  color: #555; /* Add a slightly darker color to the text */
+}
