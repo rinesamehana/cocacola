@@ -21,7 +21,7 @@ function Navbar() {
         <a href="/#">Home</a>
         <a href="/aboutpage">Our Company</a>
         <a href="/brandspage">Brands</a>
-        <a href="/#">Sustainability</a>
+        <a href="/fantapage">Fanta</a>
         <button
           className="nav-btn nav-close-btn"
           onClick={showNavbar}

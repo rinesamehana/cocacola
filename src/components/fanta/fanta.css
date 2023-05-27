@@ -103,7 +103,17 @@
     background-image: url(../../../public/images/fanta.png);
     height: 600px;
     width: 500px;
+    animation: moveImage 2s infinite alternate;
 }
+
+@keyframes moveImage {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(160px); /* Adjust the distance you want the image to move */
+    }
+  }
 .fantaText{
     background-color: orange;
     display: flex;
