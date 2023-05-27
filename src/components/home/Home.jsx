@@ -1,4 +1,5 @@
 import React from 'react';
+import { Controller, Scene } from 'react-scrollmagic';
 
 import './home.css';
 
@@ -6,6 +7,7 @@ const Home = () => {
 
   return (
     <>
+     <Controller>
     <div className="video-section">
     <video autoPlay loop muted className="video">
       <source src="../../../videos/intro.mp4" type="video/mp4" />
@@ -27,6 +29,8 @@ const Home = () => {
 
     </div>
 
+    
+    </Controller>
 
   </>
   );
