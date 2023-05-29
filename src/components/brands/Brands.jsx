@@ -8,7 +8,7 @@ const Brands = () => {
    <>
    <div class="container">
    <div class="line">
-   <NavLink to="/">
+   <NavLink to="/spritepage">
    <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='flipX'/>
    </NavLink>
 </div>
