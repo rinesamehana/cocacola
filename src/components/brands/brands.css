@@ -1,16 +1,17 @@
 .container {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    margin-left: 140px; /* Adjust the margin value to move the container to the right */
   }
   
   .line {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     animation-duration: 1s;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(7, 1, 1, 0.3);
@@ -25,7 +26,7 @@
   
   /* flipping class and key frames*/
   .flipX {
-    animation: 1s anim-flipX ease infinite;
+    animation: 2s anim-flipX ease infinite;
   }
   @keyframes anim-flipX {
     0% {

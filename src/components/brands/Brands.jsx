@@ -1,25 +1,31 @@
 import React from 'react';
 import './brands.css';
+import { useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Brands = () => {
   return (
    <>
    <div class="container">
    <div class="line">
+   <NavLink to="/">
    <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='flipX'/>
+   </NavLink>
 </div>
 
   <div class="line">
+  <NavLink to="/fantapage">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Fanta_logo_%282018%29.png" class='lineUp'/>
+    </NavLink>
   </div>
 
   <div class='line'>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Diet_Coke_Logo_1997.svg/1200px-Diet_Coke_Logo_1997.svg.png" class='flipY'/>
+  <img src="../../images/dietcokee.png" class='flipY'/>
   </div>
 
 
   <div class='line'>
-  <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='pop-outin'/>
+  <img src="https://www.coca-cola-france.fr/content/dam/one/fr/fr/logo-color/fuzetea-logo.png" class='pop-outin'/>
   </div>
 
   </div>
@@ -27,45 +33,26 @@ const Brands = () => {
 
   <div class="container">
    <div class="line">
-   <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='flipX'/>
+   <img src="https://seeklogo.com/images/A/Ades-logo-7677395FC3-seeklogo.com.png" class='flipX'/>
 </div>
 
   <div class="line">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Fanta_logo_%282018%29.png" class='lineUp'/>
+    <img src="https://seeklogo.com/images/C/ciel-logo-992909D409-seeklogo.com.png" class='lineUp'/>
   </div>
 
   <div class='line'>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Diet_Coke_Logo_1997.svg/1200px-Diet_Coke_Logo_1997.svg.png" class='flipY'/>
-  </div>
-
-
-  <div class='line'>
-  <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='pop-outin'/>
-  </div>
-
-  </div>
-
-
-
-  <div class="container">
-   <div class="line">
-   <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='flipX'/>
-</div>
-
-  <div class="line">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Fanta_logo_%282018%29.png" class='lineUp'/>
-  </div>
-
-  <div class='line'>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Diet_Coke_Logo_1997.svg/1200px-Diet_Coke_Logo_1997.svg.png" class='flipY'/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Schweppes_Logo_2016.png" class='flipY'/>
   </div>
 
 
   <div class='line'>
-  <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='pop-outin'/>
+  <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Logo_Glac%C3%A9au_vitaminwater.png/1200px-Logo_Glac%C3%A9au_vitaminwater.png" class='pop-outin'/>
   </div>
 
   </div>
+
+  
+
    
    
    </>
