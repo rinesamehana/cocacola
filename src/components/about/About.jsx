@@ -25,20 +25,32 @@ const About = () => {
   </div>
 
 
-
-      <div className="cover-slider">
-      <Carousel autoPlay interval={2000} infiniteLoop showStatus={false} showThumbs={false}>
-        <div>
-          <img src="https://www.coca-colacompany.com/content/dam/journey/au/en/our-company/Our%20Company%20Module%20Suggestion.png" alt="Slide 1" />
-        </div>
-        <div>
-          <img src="https://cdn.trendhunterstatic.com/thumbs/303/cocacola-head-office.jpeg?auto=webp" alt="Slide 2" />
-        </div>
-        <div>
-          <img src="https://cocacolaunited-old.s3.amazonaws.com/wp-content/uploads/2013/06/Milledgeville-100-Year.jpg" alt="Slide 3" />
-        </div>
-      </Carousel>
+  <div className="section">
+      <div className="text-box">
+        <h2>Our purpose is to refresh the world and make a difference</h2>
+        <p>We are committed to offering people more of the drinks they want across a range of categories 
+          and and sizes while driving sustainable solutions that build resilience into our business and create positive change for the planet..</p>
+      </div>
+      <div className="slider-box">
+        <Carousel autoPlay interval={2000} infiniteLoop showStatus={false} showThumbs={false}>
+          <div>
+            <img src="https://www.coca-colacompany.com/content/dam/journey/au/en/our-company/Our%20Company%20Module%20Suggestion.png" alt="Slide 1" />
+          </div>
+          <div>
+            <img src="https://cdn.trendhunterstatic.com/thumbs/303/cocacola-head-office.jpeg?auto=webp" alt="Slide 2" />
+          </div>
+          <div>
+            <img src="https://cocacolaunited-old.s3.amazonaws.com/wp-content/uploads/2013/06/Milledgeville-100-Year.jpg" alt="Slide 3" />
+          </div>
+        </Carousel>
+      </div>
     </div>
+
+
+
+
+
+
 
 
     </>
