@@ -1,0 +1,12 @@
+.bg-red-800 {
+    background-color: var(--mainColor); /* Default color */
+  }
+  
+  .bg-red-800.active-fanta {
+    background-color:#EF5B0B/* Change to orange when on the About page */
+  }
+  
+  .bg-red-800.active-sprite {
+    background-color:#00A950 /* Change to blue when on the Contact page */
+  }
+  

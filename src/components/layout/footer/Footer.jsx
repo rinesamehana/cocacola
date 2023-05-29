@@ -1,7 +1,25 @@
+import { useLocation } from "react-router-dom";
+import "./footer.css"
+
+
 const Footer = () => {
+  const location = useLocation();
+
+  const getActivePageClass = (pathname) => {
+    if (pathname === "/fantapage") {
+      return "active-fanta";
+    } 
+    if (pathname === "/spritepage") {
+      return "active-sprite";
+    } 
+  
+    return ""; // Default class when not on a specific page
+  };
+
+  const activePageClass = getActivePageClass(location.pathname);
   return (
     <>
-      <div className="bg-red-800 w-full p-4 flex justify-center">
+       <div className={`bg-red-800 w-full p-4 flex justify-center ${activePageClass}`}>
         <div className="flex flex-col lg:flex-row justify-center">
           <div className="flex flex-col  items-center lg:items-start px-24">
             <h4 className="text-white text-lg font-bold">About Us</h4>
