@@ -116,11 +116,25 @@
   }
 .fantaText{
     background-color: orange;
-    display: flex;
-    justify-content: center;
-    height:250px;
-    width: 300px;
+   
+    height:300px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-left: 50px;
 }
-.h1.fantaText{
-    padding: 10%;
-}
+
+.fantaText h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  .fantaText p {
+    color: rgb(255, 250, 250);
+    font-size: 20px;
+    text-align: left;
+   
+  }

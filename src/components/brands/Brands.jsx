@@ -3,10 +3,23 @@ import './brands.css';
 
 const Brands = () => {
   return (
-    <div>
-      <h1>Welcome to My BRAND React Page</h1>
-      <p>This is a basic example of a React page.</p>
-    </div>
+   <>
+   <div class='line'>
+    <h2 class='flipX'>flip vertical</h2>
+  </div>
+  <div class="line">
+    <h2 class='lineUp'>line up</h2>
+  </div>
+  <div class='line'>
+    <h2 class='flipY'>flip horizontal</h2>
+  </div>
+  <div class='line'>
+    <h2 class='pop-outin'>text pop-out-in</h2>
+  </div>
+   
+   
+   
+   </>
   );
 };
 

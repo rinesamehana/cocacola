@@ -18,9 +18,14 @@ const Fanta = () => {
       <div class="fanta-section">  
        <div class="fantaImage">
       </div>
+
+      
       <div class="fantaText">
-        <h1>test</h1>
-        <p>test</p></div>
+        <h1>ORGANGE </h1>
+        <br/>
+        <p>It's a classic iconic flavor inspiration in a bottle passion
+          for life share every moment because embracing what makes you unique
+          makes you cool thing.</p></div>
       </div>
 
    
