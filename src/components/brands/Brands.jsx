@@ -4,17 +4,21 @@ import './brands.css';
 const Brands = () => {
   return (
    <>
-   <div class='line'>
-    <h2 class='flipX'>flip vertical</h2>
-  </div>
+   <div class="line">
+   <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='flipX'/>
+</div>
+
   <div class="line">
-    <h2 class='lineUp'>line up</h2>
+    <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='lineUp'/>
   </div>
+
   <div class='line'>
-    <h2 class='flipY'>flip horizontal</h2>
+  <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='flipY'/>
   </div>
+
+
   <div class='line'>
-    <h2 class='pop-outin'>text pop-out-in</h2>
+  <img src="https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-lemon-lime-soda-png-logo-4.png" class='pop-outin'/>
   </div>
    
    
