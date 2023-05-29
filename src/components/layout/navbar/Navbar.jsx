@@ -1,38 +1,45 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 import "./navbar.css";
 
 function Navbar() {
   const navRef = useRef();
+  const location = useLocation();
 
   const showNavbar = () => {
-    navRef.current.classList.toggle(
-      "responsive_nav"
-    );
+    navRef.current.classList.toggle("responsive_nav");
   };
 
+  const getActivePageClass = (pathname) => {
+    if (pathname === "/fantapage") {
+      return "active-fanta";
+    } 
+    
+    if (pathname === "/spritepage") {
+      return "active-sprite";
+    } 
+    
+    return ""; // Default class when not on a specific page
+  };
+
+  const activePageClass = getActivePageClass(location.pathname);
+
   return (
-    <header>
+    <header className={activePageClass} ref={navRef}>
       <div className="img">
-      <img className="logo" src="../../../images/icon.png" alt="Logo" />
+        <img className="logo" src="../../../images/icon.png" alt="Logo" />
       </div>
-      <nav ref={navRef}>
+      <nav>
         <a href="/#">Home</a>
         <a href="/aboutpage">Our Company</a>
         <a href="/brandspage">Brands</a>
-        <a href="/fantapage">Fanta</a>
-        <button
-          className="nav-btn nav-close-btn"
-          onClick={showNavbar}
-        >
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
       </nav>
-      <button
-        className="nav-btn"
-        onClick={showNavbar}
-      >
+      <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
       </button>
     </header>

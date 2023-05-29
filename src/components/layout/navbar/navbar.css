@@ -1,28 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Titillium Web", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
 }
 
 :root {
-	--mainColor: #991B1B;
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
+  --mainColor: #991B1B;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
 }
 
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 80px;
-	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
 }
+
+header.active-fanta {
+  background-color:#FF9500
+}
+
+header.active-sprite {
+	background-color:#00A950
+  }
+  
+
+
 
 nav a {
 	margin: 0 1rem;
@@ -64,7 +75,7 @@ nav a:nth-child(4) {
 }
 
 nav a:hover {
-	color: var(--secondaryColor);
+	color: rgb(212, 203, 203);
 }
 
 header .nav-btn {
