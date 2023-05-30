@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/aboutpage" element={<AboutPage />} />
           <Route exact path="/fantapage" element={<FantaPage />} />
           <Route exact path="/spritepage" element={<SpritePage />} />
-          <Route exact path="/schweppes" element={<SchweppesPage />} />
+          <Route exact path="/schweppespage" element={<SchweppesPage />} />
           <Route exact path="/fuzeteapage" element={<FuzeteaPage />} />
         </Routes>
       </Suspense>

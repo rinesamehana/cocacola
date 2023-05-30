@@ -20,12 +20,16 @@ const Brands = () => {
   </div>
 
   <div class='line'>
-  <img src="../../images/dietcokee.png" class='flipY'/>
+  <NavLink to="/schweppespage">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Schweppes_Logo_2016.png" class='flipY'/>
+  </NavLink>
   </div>
 
 
   <div class='line'>
+  <NavLink to="/fuzeteapage">
   <img src="https://www.coca-cola-france.fr/content/dam/one/fr/fr/logo-color/fuzetea-logo.png" class='pop-outin'/>
+  </NavLink>
   </div>
 
   </div>
@@ -41,7 +45,7 @@ const Brands = () => {
   </div>
 
   <div class='line'>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Schweppes_Logo_2016.png" class='flipY'/>
+  <img src="../../images/dietcokee.png" class='flipY'/>
   </div>
 
 
