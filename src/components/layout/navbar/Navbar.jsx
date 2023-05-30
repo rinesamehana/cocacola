@@ -20,6 +20,12 @@ function Navbar() {
     if (pathname === "/spritepage") {
       return "active-sprite";
     } 
+    if (pathname === "/fuzeteapage") {
+      return "active-fuzetea";
+    } 
+    if (pathname === "/schweppespage") {
+      return "active-schweppes";
+    } 
     
     return ""; // Default class when not on a specific page
   };
