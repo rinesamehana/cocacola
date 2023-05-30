@@ -4,13 +4,15 @@ import { Route, Routes } from "react-router-dom";
 import LoadingSpinner from "./components/UI/LoadingSpinner.jsx";
 import Layout from "./components/layout/Layout";
 
-
-
 const HomePage = React.lazy(() => import("./pages/home/HomePage"));
 const BrandsPage = React.lazy(() => import("./pages/brands/BrandsPage"));
-const AboutPage =  React.lazy(() => import("./pages/about/AboutPage"));
-const FantaPage =  React.lazy(() => import("./pages/fanta/FantaPage"));
-const SpritePage =  React.lazy(() => import("./pages/sprite/SpritePage"));
+const AboutPage = React.lazy(() => import("./pages/about/AboutPage"));
+const FantaPage = React.lazy(() => import("./pages/fanta/FantaPage"));
+const SpritePage = React.lazy(() => import("./pages/sprite/SpritePage"));
+const SchweppesPage = React.lazy(() =>
+  import("./pages/schweppes/SchweppesPage")
+);
+const FuzeteaPage = React.lazy(() => import("./pages/fuzetea/FuzeteaPage"));
 
 function App() {
   return (
@@ -22,10 +24,11 @@ function App() {
           <Route exact path="/aboutpage" element={<AboutPage />} />
           <Route exact path="/fantapage" element={<FantaPage />} />
           <Route exact path="/spritepage" element={<SpritePage />} />
+          <Route exact path="/schweppes" element={<SchweppesPage />} />
+          <Route exact path="/fuzeteapage" element={<FuzeteaPage />} />
         </Routes>
       </Suspense>
-      </Layout>
-    
+    </Layout>
   );
 }
 
