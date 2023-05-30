@@ -6,7 +6,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Sprite = () => {
   return (
     <>
-      <section >
+      <div className="video-section">
+        <video autoPlay loop className="video">
+          <source src="../../../videos/sprite.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <section>
         <div class="main">
           <div class="text">
             <h1>
@@ -21,20 +26,16 @@ const Sprite = () => {
               against 7 Up.
             </p>
 
-            
             <div class="bounce-in-back">
-            <a href="#" class="btn">
-              COCA COLA BRAND
-            </a>
+              <a href="#" class="btn">
+                COCA COLA BRAND
+              </a>
             </div>
-
           </div>
 
           <div class="image">
             <img src="../../../images/5.png" />
           </div>
-
-         
         </div>
       </section>
     </>

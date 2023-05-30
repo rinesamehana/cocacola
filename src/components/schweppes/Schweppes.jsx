@@ -5,7 +5,7 @@ const Schweppes = () => {
   return (
     <>
    
-      <div className="video-section">
+   <div className="video-section">
         <video autoPlay loop className="video">
           <source src="../../../videos/schweppes.mp4" type="video/mp4" />
         </video>
