@@ -17,7 +17,7 @@ const Home = () => {
           )}
         </Scene>
 
-        <Scene duration={500} triggerElement=".section">
+        <Scene duration={6000} triggerElement=".section" offset={200}>
           {(progress) => (
             <div className="section">
               <div className="image-container">
