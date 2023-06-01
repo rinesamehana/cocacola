@@ -1,81 +1,95 @@
 @keyframes circle-in-top-right {
-    from {
-      clip-path: circle(0%);
-      background-color: transparent;
-    }
-    to {
-      clip-path: circle(150% at top right);
-      background-color: #91D6AC;
-    }
-  }
-  
-  .fuzetea-container {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
-    /* Add other attractive styles for the container */
+  from {
+    clip-path: circle(0%);
     background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
   }
-  
-  .fuzetea-bubble {
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-    border-radius: 50%;
-    background-color: rgba(0, 128, 0, 0.5);
-   
+  to {
+    clip-path: circle(150% at top right);
+    background-color: #91D6AC;
   }
-  
-  .fuzetea-logo {
-    width: 800px;
-    height: auto;
-  }
-  
-  .title-word {
-    animation: color-animation 4s linear infinite;
-  }
-  
-  .title-word-1 {
-    --color-1: #DF8453;
-    --color-2: #3D8DAE;
-    --color-3: #E4A9A8;
-  }
-  
-  .title-word-2 {
-    --color-1: #DBAD4A;
-    --color-2: #ACCFCB;
-    --color-3: #17494D;
-  }
-  
-  .title-word-3 {
-    --color-1: #ACCFCB;
-    --color-2: #E4A9A8;
-    --color-3: #ACCFCB;
-  }
-  
-  .title-word-4 {
-    --color-1: #3D8DAE;
-    --color-2: #DF8453;
-    --color-3: #E4A9A8;
-  }
-  
-  @keyframes color-animation {
-    0%    {color: var(--color-1)}
-    32%   {color: var(--color-1)}
-    33%   {color: var(--color-2)}
-    65%   {color: var(--color-2)}
-    66%   {color: var(--color-3)}
-    99%   {color: var(--color-3)}
-    100%  {color: var(--color-1)}
-  }
-  
+}
 
+.fuzetea-container {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.fuzetea-bubble {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 128, 0, 0.5);
+  top: -40px; 
+  margin-bottom: 60px;
+}
+
+
+.fuzetea-logo {
+  width: 800px;
+  height: auto;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0% { color: var(--color-1) }
+  32% { color: var(--color-1) }
+  33% { color: var(--color-2) }
+  65% { color: var(--color-2) }
+  66% { color: var(--color-3) }
+  99% { color: var(--color-3) }
+  100% { color: var(--color-1) }
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 120px;
+  text-transform: uppercase;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
   .title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 120px;
-    text-transform: uppercase;
+    font-size: 80px;
   }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 60px;
+  }
+}
