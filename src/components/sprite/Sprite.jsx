@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./sprite.css";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Sprite = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
+
   return (
     <>
       <div className="video-section">
@@ -14,7 +18,7 @@ const Sprite = () => {
 
       <section>
         <div className="main">
-          <div className="text">
+          <div className="text" data-aos="fade-up">
             <h1>
               THAT'S WHAT<span>I LIKE</span>
             </h1>
@@ -27,14 +31,12 @@ const Sprite = () => {
               against 7 Up.
             </p>
 
-            <div className="bounce-in-back">
-              <a href="#" className="btn">
-                COCA COLA BRAND
-              </a>
-            </div>
+            <a href="#" className="btn">
+              COCA COLA BRAND
+            </a>
           </div>
 
-          <div className="image">
+          <div className="image" data-aos="roll-in">
             <img src="../../../images/5.png" alt="Sprite" />
           </div>
         </div>

@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./schweppes.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Schweppes = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
-      <div className="video-section">
+      <div className="video-section" data-aos="circle-in-top-right">
         <video autoPlay loop className="video">
           <source src="../../../videos/schweppes.mp4" type="video/mp4" />
         </video>
@@ -14,8 +20,8 @@ const Schweppes = () => {
 
       <div className="section">
         <div className="container">
-          <div className="textbox">
-            <h2>Enjoy this sturdy drink with some sweet people! 🙌  </h2>
+          <div className="textbox" data-aos="fade-right">
+            <h2>Enjoy this sturdy drink with some sweet people! 🙌</h2>
             <p>
               We are committed to offering people more of the drinks they want
               across a range of categories and sizes while driving sustainable
@@ -23,7 +29,7 @@ const Schweppes = () => {
               positive change for the planet.
             </p>
           </div>
-          <div className="imgbox">
+          <div className="imgbox" data-aos="fade-left">
             <Carousel
               autoPlay
               interval={2000}
