@@ -6,7 +6,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const About = () => {
   return (
     <>
-    <div class="about">
       <div class="container">
         <h2 class="title">
           <span class="title-word title-word-1">OUR</span>
@@ -61,6 +60,9 @@ const About = () => {
           </Carousel>
         </div>
       </div>
+      
+      <div class="cover-section">
+        <img src="https://cdn.cookielaw.org/logos/e3ab7adf-beb9-4769-844e-c1ec4e6d17bb/9179bc3a-b9bb-4e2c-8b1b-35a6834b2321/fb612f13-b95e-41b2-aaf9-eacdb72ddc38/coke-cookies-logo-preference-centre.png" alt="Cover Image" />
       </div>
     </>
   );
