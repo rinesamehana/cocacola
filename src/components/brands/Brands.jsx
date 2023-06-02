@@ -45,7 +45,9 @@ const Brands = () => {
   </div>
 
   <div class='line'>
+  <NavLink to="/dietcokepage">
   <img src="../../images/dietcokee.png" class='flipY'/>
+  </NavLink>
   </div>
 
 

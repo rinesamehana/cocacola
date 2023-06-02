@@ -13,6 +13,7 @@ const SchweppesPage = React.lazy(() =>
   import("./pages/schweppes/SchweppesPage")
 );
 const FuzeteaPage = React.lazy(() => import("./pages/fuzetea/FuzeteaPage"));
+const DietCokePage = React.lazy(() => import("./pages/dietcoke/DietCokePage"));
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/spritepage" element={<SpritePage />} />
           <Route exact path="/schweppespage" element={<SchweppesPage />} />
           <Route exact path="/fuzeteapage" element={<FuzeteaPage />} />
+          <Route exact path="/dietcokepage" element={<DietCokePage />} />
         </Routes>
       </Suspense>
     </Layout>
