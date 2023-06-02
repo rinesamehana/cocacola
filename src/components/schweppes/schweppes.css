@@ -40,6 +40,19 @@
     align-items: center;
    
   }
+
+  @keyframes rollIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+ 
   
   .textbox{
     width: 400px;
@@ -51,6 +64,7 @@
     border-radius: 50px;
     margin-right: 40px;
     font-weight: bold;
+    animation: rollIn 1s ease-in-out;
   }
 
 
@@ -70,6 +84,42 @@
     height: 600px;
 
   }
+
+ 
+  .cover-section {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+  
+  }
+
+  h2 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  
+  .cover-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+
+  
+  
   
   
   
