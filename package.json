@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "pixi.js": "^7.2.4",
+    "pixijs": "^7.1.4",
     "react": "^18.2.0",
     "react-animate-on-scroll": "^2.1.7",
     "react-awesome-reveal": "^4.2.3",

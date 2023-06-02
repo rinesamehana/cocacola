@@ -12,7 +12,7 @@ const DietCoke = () => {
     bunny.x = app.screen.width / 2;
     bunny.y = app.screen.height / 2;
 
-    const rotationSpeed = 0.05; // Adjust the speed of rotation (higher value = faster)
+    const rotationSpeed = 0.008; // Adjust the speed of rotation (higher value = faster)
 
     app.stage.addChild(bunny);
 

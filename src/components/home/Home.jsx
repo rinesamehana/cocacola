@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <div className="video-section">
@@ -11,7 +17,11 @@ const Home = () => {
         </video>
       </div>
 
-      <div className="section">
+      <div
+        className="section"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+      >
         <div className="image-container">
           <img src="../../../images/cocacoke.webp" alt="Image" />
         </div>
