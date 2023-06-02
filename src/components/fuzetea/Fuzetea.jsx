@@ -27,7 +27,7 @@ const Fuzetea = () => {
 
       <div className="fuzetea-container" transition-style="in:circle:top-right">
 
-      <div class="container">
+      <div  id="container">
         <h2 class="title">
           <span class="title-word title-word-1">OUR</span> 
           <span class="title-word title-word-2">BELOVED</span>

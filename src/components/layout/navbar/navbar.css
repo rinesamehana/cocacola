@@ -49,7 +49,8 @@ nav a {
 	color: var(--textColor);
 	text-decoration: none;
 	opacity: 0;
-	font-size: 18px;
+	font-size: 22px;
+	font-weight: bolder;
 }
 
 nav a:nth-child(1) {
