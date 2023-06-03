@@ -103,7 +103,7 @@
     background-image: url(../../../public/images/fanta.png);
     height: 600px;
     width: 500px;
-    animation: moveImage 2s infinite alternate;
+    animation: moveImage 2s  alternate;
 }
 
 @keyframes moveImage {
