@@ -149,7 +149,7 @@ nav {
 		gap: 1.5rem;
 		background-color: var(--mainColor);
 		transition: 1s;
-		z-index: 9999; /* Add a high z-index value */
+		z-index: 9999; 
 	}
 
 	header .responsive_nav {

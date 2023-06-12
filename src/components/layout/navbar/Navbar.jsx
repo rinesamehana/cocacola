@@ -27,7 +27,7 @@ function Navbar() {
       return "active-schweppes";
     } 
     
-    return ""; // Default class when not on a specific page
+    return ""; 
   };
 
   const activePageClass = getActivePageClass(location.pathname);

@@ -111,7 +111,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(160px); /* Adjust the distance you want the image to move */
+      transform: translateX(160px); 
     }
   }
 .fantaText{

@@ -97,7 +97,7 @@ p {
 
 /*  DATA AOS */
 
-/* Add styles for animated elements */
+
 [data-aos] {
   opacity: 0;
   visibility: hidden;

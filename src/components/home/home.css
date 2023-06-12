@@ -76,17 +76,17 @@
   border: 5px solid #521313;
   transition: background-color 0.3s, transform 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  animation: roll-in-text 2s forwards, border-animation 2s infinite, tracking-in-expand-fwd 1.5s ease-in-out; /* Add the roll-in animation to the card text */
+  animation: roll-in-text 2s forwards, border-animation 2s infinite, tracking-in-expand-fwd 1.5s ease-in-out; 
   font-weight: bold;
 }
 
 @keyframes roll-in-text {
   0% {
-    transform: translateX(50%); /* Start offscreen from the right */
+    transform: translateX(50%); 
     opacity: 0;
   }
   100% {
-    transform: translateX(0); /* Move to the original position */
+    transform: translateX(0); 
     opacity: 1;
   }
 }
@@ -127,7 +127,7 @@
 
 .card-text p {
   font-size: 22px;
-  color: #555; /* Add a slightly darker color to the text */
+  color: #555; 
 }
 
 .picture-frame {

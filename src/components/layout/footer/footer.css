@@ -1,22 +1,22 @@
 .bg-red-800 {
-    background-color: var(--mainColor); /* Default color */
+    background-color: var(--mainColor); 
   }
   
   .bg-red-800.active-fanta {
-    background-color:#EF5B0B/* Change to orange when on the About page */
+    background-color:#EF5B0B
   }
   
   .bg-red-800.active-sprite {
-    background-color:#00A950 /* Change to blue when on the Contact page */
+    background-color:#00A950 
   }
   
 
   .bg-red-800.active-fuzetea{
-    background-color:#82ca9e/* Change to blue when on the Contact page */
+    background-color:#82ca9e
   }
   
 
   .bg-red-800.active-schweppes {
-    background-color:#d1d422/* Change to blue when on the Contact page */
+    background-color:#d1d422
   }
   

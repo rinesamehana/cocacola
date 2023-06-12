@@ -17,7 +17,7 @@ const Sprite = () => {
       </div>
 
       <section>
-        <div className="main">
+        <div className="main" >
           <div className="text" data-aos="fade-up">
             <h1>
               THAT'S WHAT<span>I LIKE</span>
@@ -36,7 +36,7 @@ const Sprite = () => {
             </a>
           </div>
 
-          <div className="image" data-aos="roll-in">
+          <div className="image" data-aos="fade-left">
             <img src="../../../images/5.png" alt="Sprite" />
           </div>
         </div>
