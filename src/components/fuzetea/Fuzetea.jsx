@@ -53,3 +53,4 @@ const Fuzetea = () => {
 };
 
 export default Fuzetea;
+
