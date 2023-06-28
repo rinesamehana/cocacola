@@ -11,25 +11,18 @@ const Ades = () => {
       view: pixiCanvasRef.current,
     });
 
- 
-    const adesdrink = PIXI.Sprite.from('../../images/ades-removebg-preview.png');
+    const adesDrink = PIXI.Sprite.from('../../images/ades-removebg-preview.png');
+    adesDrink.anchor.set(0.5);
+    adesDrink.x = app.screen.width / 2;
+    adesDrink.y = app.screen.height / 2;
+    adesDrink.scale.set(1.2);
 
-    
-    adesdrink.anchor.set(0.5);
+    app.stage.addChild(adesDrink);
 
-    
-    adesdrink.x = app.screen.width / 2;
-    adesdrink.y = app.screen.height / 2;
-
-   
-    adesdrink.scale.set(1.2);
-
-    app.stage.addChild(adesdrink);
-
-
-    app.ticker.add(() => {
-     
-      adesdrink.scale.x *= -1;
+    let angle = 0;
+    app.ticker.add((delta) => {
+      angle += 0.1 * delta; // Adjust the rotation speed (0.01) as desired
+      adesDrink.rotation = Math.sin(angle) * 0.1; // Adjust the amplitude (0.1) of the jiggle as desired
     });
   }, []);
 
