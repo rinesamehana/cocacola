@@ -6,7 +6,12 @@ const Ciel = () => {
   const appRef = useRef(null);
 
   useEffect(() => {
-    appRef.current = new PIXI.Application({ background: '#1099bb', resizeTo: window });
+    appRef.current = new PIXI.Application({
+      width: 400, 
+      height: 300, 
+      background: '#1099bb',
+      resizeTo: window,
+    });
     const app = appRef.current;
 
     const texture = PIXI.Texture.from('../../images/1.png');
@@ -58,10 +63,73 @@ const Ciel = () => {
       }
     }
 
+    // Animated Title
+    const titleStyle = new PIXI.TextStyle({
+      fontFamily: 'Arial',
+      fontSize: 48,
+      fontWeight: 'bold',
+      fill: ['#ffffff'],
+      align: 'center',
+      stroke: '#000000',
+      strokeThickness: 6,
+    });
+
+    const title = new PIXI.Text('CIEL WATER', titleStyle);
+    title.anchor.set(0.5);
+    title.x = -title.width / 2; // Initial position outside the screen
+    title.y = app.screen.height / 2;
+
+    app.stage.addChild(title);
+
+    // Slide-in Animation
+    const slideSpeed = 3; 
+    const slideDistance = app.screen.width / 2 - title.width / 2; 
+
+    const animateSlideIn = () => {
+      const newPosition = app.screen.width / 2 - title.width / 2;
+      const distanceToTravel = newPosition - title.x;
+      const framesNeeded = Math.abs(distanceToTravel) / slideSpeed;
+
+      PIXI.Ticker.shared.add(() => {
+        const movementPerFrame = distanceToTravel / framesNeeded;
+        title.x += movementPerFrame;
+
+        if (Math.abs(title.x - newPosition) < slideSpeed) {
+          title.x = newPosition;
+          PIXI.Ticker.shared.stop();
+          setTimeout(animateSlideOut, 2000); 
+        }
+      });
+    };
+
+    const animateSlideOut = () => {
+      const newPosition = -title.width / 2;
+      const distanceToTravel = newPosition - title.x;
+      const framesNeeded = Math.abs(distanceToTravel) / slideSpeed;
+
+      PIXI.Ticker.shared.add(() => {
+        const movementPerFrame = distanceToTravel / framesNeeded;
+        title.x += movementPerFrame;
+
+        if (Math.abs(title.x - newPosition) < slideSpeed) {
+          title.x = newPosition;
+          PIXI.Ticker.shared.stop();
+          setTimeout(animateSlideIn, 2000); 
+        }
+      });
+    };
+
+    setTimeout(animateSlideIn, 2000); 
+
     pixiCanvasRef.current.appendChild(app.view);
 
+    
+    appRef.current.renderer.view.style.width = '100%';
+    appRef.current.renderer.view.style.height = '100%';
+    appRef.current.renderer.view.style.objectFit = 'cover';
+
     return () => {
-     
+      PIXI.Ticker.shared.stop();
       app.destroy(true);
     };
   }, []);
