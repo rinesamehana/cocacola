@@ -19,6 +19,12 @@ const Footer = () => {
     if (pathname === "/schweppespage") {
       return "active-schweppes";
     } 
+
+    
+    if (pathname === "/cielpage") {
+      return "active-ciel";
+    } 
+    
   
     return "";
   };

@@ -9,7 +9,7 @@ const Ciel = () => {
     appRef.current = new PIXI.Application({ background: '#1099bb', resizeTo: window });
     const app = appRef.current;
 
-    const texture = PIXI.Texture.from('https://pixijs.com/assets/bunny.png');
+    const texture = PIXI.Texture.from('../../images/1.png');
     texture.baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
 
     for (let i = 0; i < 10; i++) {
