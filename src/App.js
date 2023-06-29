@@ -16,6 +16,7 @@ const SchweppesPage = React.lazy(() =>
 const FuzeteaPage = React.lazy(() => import("./pages/fuzetea/FuzeteaPage"));
 const DietCokePage = React.lazy(() => import("./pages/dietcoke/DietCokePage"));
 const AdesPage = React.lazy(() => import("./pages/ades/AdesPage"));
+const CielPage = React.lazy(() => import("./pages/ciel/CielPage"));
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/fuzeteapage" element={<FuzeteaPage />} />
           <Route exact path="/dietcokepage" element={<DietCokePage />} />
           <Route exact path="/adespage" element={<AdesPage />} />
+          <Route exact path="/cielpage" element={<CielPage />} />
         </Routes>
       </Suspense>
     </Layout>

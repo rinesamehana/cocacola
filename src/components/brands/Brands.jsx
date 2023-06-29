@@ -43,7 +43,9 @@ const Brands = () => {
 </div>
 
   <div class="line">
+  <NavLink to="/cielpage">
     <img src="https://seeklogo.com/images/C/ciel-logo-992909D409-seeklogo.com.png" class='lineUp'/>
+    </NavLink>
   </div>
 
   <div class='line'>
