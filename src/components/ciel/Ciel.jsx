@@ -63,7 +63,7 @@ const Ciel = () => {
       }
     }
 
-    // Animated Title
+    
     const titleStyle = new PIXI.TextStyle({
       fontFamily: 'Arial',
       fontSize: 48,
@@ -76,12 +76,12 @@ const Ciel = () => {
 
     const title = new PIXI.Text('CIEL WATER', titleStyle);
     title.anchor.set(0.5);
-    title.x = -title.width / 2; // Initial position outside the screen
+    title.x = -title.width / 2; 
     title.y = app.screen.height / 2;
 
     app.stage.addChild(title);
 
-    // Slide-in Animation
+ 
     const slideSpeed = 3; 
     const slideDistance = app.screen.width / 2 - title.width / 2; 
 

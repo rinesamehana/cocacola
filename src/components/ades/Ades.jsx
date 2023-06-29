@@ -21,8 +21,8 @@ const Ades = () => {
 
     let angle = 0;
     app.ticker.add((delta) => {
-      angle += 0.1 * delta; // Adjust the rotation speed (0.01) as desired
-      adesDrink.rotation = Math.sin(angle) * 0.1; // Adjust the amplitude (0.1) of the jiggle as desired
+      angle += 0.1 * delta; 
+      adesDrink.rotation = Math.sin(angle) * 0.1; 
     });
   }, []);
 

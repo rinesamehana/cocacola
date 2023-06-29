@@ -11,10 +11,10 @@ const Fuzetea = () => {
       audioElement.play();
     };
 
-    // Play audio automatically when the component mounts
+   
     playAudio();
 
-    // Clean up function
+    
     return () => {
       audioElement.pause();
       audioElement.currentTime = 0;
